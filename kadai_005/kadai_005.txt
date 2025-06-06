@@ -1,0 +1,41 @@
+PS C:\Users\ju7ar\OneDrive\Desktop\test> mkdir git_challenge  
+
+
+    ディレクトリ: C:\Users\ju7ar\OneDrive\Desktop\test
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/07      3:40                git_challenge
+
+
+PS C:\Users\ju7ar\OneDrive\Desktop\test> cd .\git_challenge\
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> git init
+Initialized empty Git repository in C:/Users/ju7ar/OneDrive/Desktop/test/git_challenge/.git/
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> git add .
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> git commit -m "add"
+[main (root-commit) 7613c21] add
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge>
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> echo "こんにちは, 世界!" >> hello_world.txt
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> git add .          
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> git commit -m "add"
+[main f00ebdb] add
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> git log
+commit f00ebdbd3d53d25cf8534cd00e975b288b4fa10d (HEAD -> main)
+Author: keeg2an <ju3hsk@gmail.com>
+Date:   Sat Jun 7 03:43:14 2025 +0900
+
+    add
+
+commit 7613c21136cbe967d404f694fb566bd7529e0bcd
+Author: keeg2an <ju3hsk@gmail.com>
+Date:   Sat Jun 7 03:42:38 2025 +0900
+
+    add
+PS C:\Users\ju7ar\OneDrive\Desktop\test\git_challenge> cat .\hello_world.txt
+Hello, world!
+こんにちは, 世界!
